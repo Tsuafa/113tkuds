@@ -82,7 +82,7 @@ public class TicTacToe5x5 {
     }
 
     public static boolean checkWin(char player) {
-        // 檢查每一行
+       
         for (int i = 0; i < SIZE; i++) {
             boolean win = true;
             for (int j = 0; j < SIZE; j++) {
@@ -92,7 +92,7 @@ public class TicTacToe5x5 {
             if (win) return true;
         }
 
-        // 檢查每一列
+       
         for (int j = 0; j < SIZE; j++) {
             boolean win = true;
             for (int i = 0; i < SIZE; i++) {
@@ -102,7 +102,7 @@ public class TicTacToe5x5 {
             if (win) return true;
         }
 
-        // 檢查主對角線
+       
         boolean win = true;
         for (int i = 0; i < SIZE; i++) {
             if (board[i][i] != player)
@@ -110,7 +110,7 @@ public class TicTacToe5x5 {
         }
         if (win) return true;
 
-        // 檢查反對角線
+       
         win = true;
         for (int i = 0; i < SIZE; i++) {
             if (board[i][SIZE - 1 - i] != player)
